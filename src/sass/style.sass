@@ -2,6 +2,12 @@ $blue_color1:#1EACC7
 $blue_color2:#1CA8C3
 $blue_color3:#1FBAD6
 $red_color:#FF5656
+
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: $blue_color1
+
 *
   font-family: 'Roboto', sans-serif
 
@@ -85,6 +91,8 @@ header
   text-transform: uppercase
   color: #FFFFFF
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+  +btn_hover
+  
 
 .promo
   min-height: 715px
@@ -130,6 +138,7 @@ header
   color: #FFFFFF
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
   border: none
+  +btn_hover
 
 .reasons
   min-height: 680px
@@ -249,6 +258,29 @@ header
             border-radius: 100%
             padding: 6px
             cursor: pointer
+            &:before
+              content: ''
+              display: block
+              width: 14px
+              height: 2px
+              background-color: $blue_color1
+              transition: 0.3s all
+            &:after
+              content: ''
+              position: absolute
+              left: 50%
+              transform: translateX(-50%)
+              display: block              
+              height: 14px
+              width: 2px
+              background-color: $blue_color1
+              transition:  0.3s all    
+            &:hover
+              &:before, &:after
+                background-color: $red_color
+                
+                
+             
            
 .choice
     min-height: 900px
@@ -277,3 +309,49 @@ header
     font-size: 17px
     font-weight: 300
     line-height: 24px
+
+.require 
+  padding: 68px 0 90px 0
+  &__block
+    margin: 33px 0
+    &__nmb
+      margin-bottom: 0px
+  &__title
+    color: $blue_color2
+    font-size: 22px
+    line-height: 24px
+    font-weight: 400
+  &__list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      position: relative
+      color: #222
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 10px
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        left: -32px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url('../icons/terms/term1.svg') center (center / cover) no-repeat
+  &__descr
+    margin-top: 25px
+    color: $blue_color2
+    font-size: 17px    
+    font-weight: 300
+    line-height: 24px
+  .warning
+    .require__title
+      color: $red_color
+    .require__list
+      li
+        &:before
+          background: url('../icons/terms/term2.svg') center (center / cover) no-repeat
+          

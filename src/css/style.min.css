@@ -100,6 +100,10 @@ header {
   color: #FFFFFF;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
+}
 
 .promo {
   min-height: 715px;
@@ -151,6 +155,10 @@ header {
   color: #FFFFFF;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
   border: none;
+}
+.promo__btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
 }
 
 .reasons {
@@ -314,6 +322,31 @@ header {
   padding: 6px;
   cursor: pointer;
 }
+.mobile__item__plus:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1EACC7;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.mobile__item__plus:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  height: 14px;
+  width: 2px;
+  background-color: #1EACC7;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.mobile__item__plus:hover:before, .mobile__item__plus:hover:after {
+  background-color: #FF5656;
+}
 
 .choice {
   min-height: 900px;
@@ -347,4 +380,56 @@ header {
   font-size: 17px;
   font-weight: 300;
   line-height: 24px;
+}
+
+.require {
+  padding: 68px 0 90px 0;
+}
+.require__block {
+  margin: 33px 0;
+}
+.require__block__nmb {
+  margin-bottom: 0px;
+}
+.require__title {
+  color: #1CA8C3;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.require__list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+.require__list li {
+  position: relative;
+  color: #222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.require__list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/terms/term1.svg") center center/cover no-repeat;
+}
+.require__descr {
+  margin-top: 25px;
+  color: #1CA8C3;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.require .warning .require__title {
+  color: #FF5656;
+}
+.require .warning .require__list li:before {
+  background: url("../icons/terms/term2.svg") center center/cover no-repeat;
 }/*# sourceMappingURL=style.min.css.map */
