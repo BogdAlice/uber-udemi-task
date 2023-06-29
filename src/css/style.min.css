@@ -260,7 +260,7 @@ header {
 .mobile {
   min-height: 864px;
   padding: 48px 0 80px 0;
-  background: url("../img/mobile_bg.jpg") center center/cover no-repaet;
+  background: url("../img/mobile_bg.jpg") center center/cover no-repeat;
 }
 .mobile .row {
   margin-top: 32px;
@@ -432,4 +432,33 @@ header {
 }
 .require .warning .require__list li:before {
   background: url("../icons/terms/term2.svg") center center/cover no-repeat;
+}
+
+.world {
+  min-height: 720px;
+  padding: 48px 0 60px 0;
+  background: url("../img/map_bg.jpg") center center/cover no-repeat;
+}
+.world__cities {
+  height: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.world__cities__link {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1FBAD6;
+  text-decoration: none;
+}
+.world__cities__link:hover {
+  color: #fff;
 }/*# sourceMappingURL=style.min.css.map */
