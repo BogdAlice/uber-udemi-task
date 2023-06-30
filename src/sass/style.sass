@@ -279,10 +279,7 @@ header
             &:hover
               &:before, &:after
                 background-color: $red_color
-                
-                
-             
-           
+
 .choice
     min-height: 900px
     padding: 56px 0 140px 0
@@ -366,7 +363,6 @@ header
     justify-content: center
     align-items: flex-end
     &__link
-      // margin-top: 410px
       text-align: center
       font-size: 15px
       font-weight: 400
@@ -375,6 +371,80 @@ header
       text-decoration: none
       &:hover
         color: #fff
+footer
+  height: 156px
+  padding: 12px 0 38px 0
+
+  .footer
+    &__divider
+      width: 301px
+      height: 7px
+      background-color: $blue_color3
+      margin: 0 auto
+    &__wrapper
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      margin-top: 32px
+    &__wrapper > div
+      width: 33%
+      &:nth-child(3)
+        display: flex
+        justify-content: flex-end
+    &__social
+      width: 160px
+      display: flex
+      justify-content: space-between
+      margin-left: 10px
+      &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 4px
+        width: 35px
+        height: 35px
+        background-color: #070716
+        border-radius: 100%
+        text-decoration: none
+        i
+          color: #fff
+    &__links
+      width: 400px
+      margin: 0 auto
+      &__main
+        display: flex
+        justify-content: space-between
+        padding: 0 10px
+        a
+          color: #070716
+          font-size: 15px
+          font-weight: 300
+          text-transform: uppercase
+          text-decoration: none
+      &__sub
+        display: flex
+        justify-content: space-between
+        margin-top: 10px
+        a
+          color: #999
+          font-size: 12px
+          font-weight: 300
+          text-transform: uppercase
+          text-decoration: none
+      &__lang
+        display: block
+        color: $blue_color3
+        text-align: center
+        font-size: 11px
+        font-weight: 400
+        line-height: 68px
+        text-transform: uppercase
+        text-decoration: non
+    &__mobile  
+      padding-right: 10px    
+      a
+        text-decoration: none
+
 
 
 
