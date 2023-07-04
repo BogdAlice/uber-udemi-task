@@ -578,4 +578,13 @@ footer .footer__mobile {
 }
 footer .footer__mobile a {
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .menu__item {
+    padding-right: 20px;
+  }
+  .menu__link {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=style.min.css.map */
