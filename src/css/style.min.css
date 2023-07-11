@@ -31,12 +31,13 @@ header {
   margin: 0;
   list-style-type: none;
 }
-
 .menu__item {
   border-right: 2px dashed #000000;
   padding-right: 30px;
 }
-
+.menu__item:last-child {
+  border-right: none;
+}
 .menu__link {
   text-decoration: none;
   font-weight: 300;
@@ -586,5 +587,59 @@ footer .footer__mobile a {
   }
   .menu__link {
     font-size: 13px;
+  }
+  .promo__header {
+    font-size: 50px;
+  }
+  .reasons__text {
+    width: 300px;
+  }
+  .mobile__item {
+    width: 300px;
+  }
+  .require__block {
+    padding-right: 75px;
+  }
+  .require__title {
+    font-size: 20px;
+  }
+  footer .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100px;
+    margin-left: 90px;
+  }
+  footer .footer__social__item {
+    margin-top: 10px;
+  }
+  footer .footer__links {
+    width: 330px;
+  }
+  footer .footer__links__sub {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 295px;
+    padding-left: 30px;
+  }
+  footer .footer__lang {
+    line-height: 50px;
+  }
+  footer .footer__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100px;
+    margin-right: 75px;
+  }
+  footer .footer__mobile__item {
+    margin-top: 10px;
+  }
+  footer .footer__mobile__item:first-child {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=style.min.css.map */
