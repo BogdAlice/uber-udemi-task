@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uber</title>
+    <link rel="shortcut icon" href="/src/icons/favicon/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+Georgian&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -21,9 +22,9 @@
                     <div class="container">
                         <ul class="menu">
                             <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Со своим автомобилем</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">На автомобиле компании</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Требования</a></li>
+                            <li class="menu__item"><a href="#require" class="menu__link">Со своим автомобилем</a></li>
+                            <li class="menu__item"><a href="#require" class="menu__link">На автомобиле компании</a></li>
+                            <li class="menu__item"><a href="#demand" class="menu__link">Требования</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Оставить заявку</a></li>
                         </ul>
@@ -227,7 +228,7 @@
             </div>
         </section>
 
-        <section class="require">
+        <section class="require" id="require">
             <div class="container">
                 <div class="lable">возможности</div>
                 <h2 class="title__section">условия и требования</h2>
@@ -263,7 +264,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="require__block require__block__nmb warning">
-                            <div class="require__title">
+                            <div class="require__title" id="demand">
                                 ТРЕБОВАНИЕ:
                             </div>
                             <ul class="require__list">
@@ -299,7 +300,7 @@
                 <h2 class="title__section title__section__white">По всему миру</h2>
                 <div class="subtitle__section subtitle__section__white">Мы в вашем городе и по всему миру</div>    
                 <div class="world__cities">
-                    <a href="!#" class="world__cities__link">посмотреть все города</a>
+                    <a href="#" class="world__cities__link">посмотреть все города</a>
                 </div>
             </div>
         </section>
